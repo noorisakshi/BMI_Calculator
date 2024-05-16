@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="#EDF87E"
+    android:id="@+id/llM">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:gravity="center">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/bmibg"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginRight="25dp"
+        android:ems="12"
+        android:padding="8dp"
+        android:background="@drawable/edtbg"
+        android:id="@+id/edtWt"
+        android:hint="Enter Weight"
+        android:inputType="number"
+        android:textStyle="bold"
+        />
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:inputType="number"
+        android:padding="8dp"
+        android:background="@drawable/edtbg"
+        android:ems="12"
+        android:id="@+id/edtHtFt"
+        android:hint="Enter Height Ft."
+        android:layout_marginTop="16dp"
+        android:textColorHighlight="@color/black"
+        android:textStyle="bold"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:padding="8dp"
+        android:background="@drawable/edtbg"
+        android:layout_marginTop="16dp"
+        android:ems="12"
+        android:inputType="number"
+        android:hint="Enter Height Inc."
+        android:id="@+id/edtHtInc"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnChk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+
+       android:text="Calculate BMI"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+
+        android:text="Calculate Another BMI"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:id="@+id/txtRes"
+        />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:background="#FBE48E"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/suggestions"
+                android:textColor="@color/black"
+                android:text="Suggestions"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="8dp"
+                android:background="@color/black"/>
+
+
+            <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:id="@+id/tvSuggestion"
+        android:textColor="@color/black"
+        android:text="Suggestion Here"
+        android:layout_marginBottom="8dp"
+        />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"
+                android:text="Risks"
+                android:background="#FBE48E"
+                android:textColor="@color/black"
+                android:id="@+id/risks"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="8dp"
+                android:background="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:id="@+id/tvRisk"
+                android:textColor="@color/black"
+                android:text="Risk Here"
+                android:layout_marginBottom="8dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+</LinearLayout>
